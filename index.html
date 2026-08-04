@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ramsfield | Developer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">&lt;</span>
+      Ramsfield
+      <span class="logo-bracket">/&gt;</span>
+    </div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">Let's Work Together</a>
+  </nav>
+
+  <section id="home" class="hero">
+    <div class="hero-left">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Available for Freelance Work
+      </div>
+      <p class="hero-greeting">Hi, I'm</p>
+      <h1><span class="hero-name gradient-text">Ramsfield.</span></h1>
+      <p class="hero-role">Frontend Developer <span class="cursor">|</span></p>
+      <p class="hero-desc">I build fast, scalable and beautiful web experiences with <span class="highlight">clean code</span> and <span class="highlight">creative solutions.</span></p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn-primary">View My Work ↗</a>
+        <a href="#contact" class="btn-ghost">CV ↓</a>
+      </div>
+      <div class="scroll-explore">
+        <i data-lucide="arrow-down"></i>
+        <span>Scroll to explore</span>
+      </div>
+    </div>
+    <div class="hero-right">
+      <img src="profile.png" alt="Ramsfield" class="hero-img">
+      <div class="hero-card">
+        <div class="code-dots"><span></span><span></span><span></span></div>
+        <div class="code-block">
+          <p><span class="code-key">const</span> <span class="code-var">Ramsfield</span> = {</p>
+          <p>&nbsp;&nbsp;<span class="code-prop">role</span>: <span class="code-str">"Frontend Developer"</span>,</p>
+          <p>&nbsp;&nbsp;<span class="code-prop">passion</span>: <span class="code-str">"Building digital experiences"</span>,</p>
+          <p>&nbsp;&nbsp;<span class="code-prop">focus</span>: <span class="code-str">"Performance &amp; Creativity"</span>,</p>
+          <p>};</p>
+        </div>
+        <p class="card-status"><span class="badge-dot"></span>Building something amazing...</p>
+      </div>
+    </div>
+    <canvas id="heroCanvas"></canvas>
+  </section>
+
+  <section class="stats-strip">
+    <div class="stat-card"><i data-lucide="rocket"></i><h3>2+</h3><p>Years Experience</p></div>
+    <div class="stat-card"><i data-lucide="code-2"></i><h3>10+</h3><p>Projects Completed</p></div>
+    <div class="stat-card"><i data-lucide="smile"></i><h3>5+</h3><p>Happy Clients</p></div>
+    <div class="stat-card"><i data-lucide="trophy"></i><h3>100%</h3><p>Dedication</p></div>
+  </section>
+
+  <section id="skills" class="skills">
+    <p class="section-label">TECH STACK</p>
+    <h2 class="skills-title">Skills & <span class="highlight">Expertise</span></h2>
+    <div class="skills-wrap">
+      <div class="skills-col">
+        <h4 class="skills-cat">Frontend</h4>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-info"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20" height="20"><span>HTML / CSS</span></div>
+            <span class="skill-percent">85%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="85"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-info"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="20" height="20"><span>JavaScript</span></div>
+            <span class="skill-percent">72%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="72"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-info"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="20" height="20" style="opacity:0.5"><span>Canvas API</span></div>
+            <span class="skill-learning">Currently Learning</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill learning" data-width="45"></div></div>
+        </div>
+      </div>
+      <div class="skills-col">
+        <h4 class="skills-cat">Backend & Tools</h4>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-info"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="20" height="20"><span>Python</span></div>
+            <span class="skill-percent">100%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill gold" data-width="100"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-info"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/supabase/supabase-original.svg" width="20" height="20"><span>Supabase</span></div>
+            <span class="skill-percent">80%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="80"></div></div>
+        </div>
+        <div class="skill-bar-item">
+          <div class="skill-bar-top">
+            <div class="skill-bar-info"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" height="20"><span>Node.js</span></div>
+            <span class="skill-percent">33%</span>
+          </div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="33"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="projects">
+    <div class="projects-header">
+      <div>
+        <p class="section-label">FEATURED PROJECTS</p>
+        <h2>Things I've Built</h2>
+      </div>
+      <a href="projects.html" class="btn-outline">View All →</a>
+    </div>
+    <div class="carousel-container">
+      <div class="carousel-wrapper">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="project-card">
+            <div class="project-img-small"><div class="project-placeholder"></div><span class="featured-tag">Featured</span></div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Lumi</h3><a href="https://t.me/Lumimatch_bot" target="_blank" class="arrow-btn">↗</a></div>
+              <p>A Telegram matching bot connecting people based on interests.</p>
+              <div class="project-tags"><span>Node.js</span><span>Telegraf.js</span><span>Supabase</span></div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img-small"><div class="project-placeholder"></div></div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>GhostChat</h3><a href="#" class="arrow-btn">↗</a></div>
+              <p>An anonymous chat app for quick throwaway conversations.</p>
+              <div class="project-tags"><span>JavaScript</span><span>Supabase</span><span>Vercel</span></div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img-small"><div class="project-placeholder"></div></div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>IP Tracker</h3><a href="#" class="arrow-btn">↗</a></div>
+              <p>A lightweight tool for resolving IP address details and geolocation.</p>
+              <div class="project-tags"><span>JavaScript</span><span>API</span></div>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-img-small"><div class="project-placeholder"></div></div>
+            <div class="project-body">
+              <div class="project-title-row"><h3>Canvas Visuals</h3><a href="#" class="arrow-btn">↗</a></div>
+              <p>Generative JavaScript animations — plasma eels, fire effects and more.</p>
+              <div class="project-tags"><span>Canvas API</span><span>JavaScript</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-dots" id="carouselDots">
+        <span class="dot active"></span><span class="dot"></span><span class="dot"></span><span class="dot"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-banner">
+    <div class="cta-left">
+      <span class="cta-icon">✦</span>
+      <div><h2>Have a project in mind?</h2><p>Let's bring your ideas to life with precision and creativity.</p></div>
+    </div>
+    <a href="#contact" class="btn-primary">Let's Talk ↗</a>
+  </section>
+
+  <footer id="contact">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo"><span class="logo-bracket">&lt;</span>Ramsfield<span class="logo-bracket">/&gt;</span></div>
+        <p>Building digital experiences with passion and purpose.</p>
+        <div class="footer-socials">
+          <a href="https://www.tiktok.com/@0xrams" target="_blank">TK</a>
+          <a href="#">IG</a><a href="#">GH</a><a href="#">FB</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="#home">Home</a><a href="about.html">About</a>
+        <a href="#skills">Skills</a><a href="#projects">Projects</a>
+        <a href="blog.html">Blog</a><a href="#contact">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="#">Web Development</a><a href="#">Telegram Bots</a>
+        <a href="#">API Integration</a><a href="#">Backend Development</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get In Touch</h4>
+        <p>📧 hello@ramsfield.dev</p>
+        <p>🌍 Available Worldwide</p>
+        <p>🟢 Open for freelance</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Ramsfield. All rights reserved.</p>
+      <p>Built with ❤️ and lots of ☕</p>
+    </div>
+  </footer>
+
+  <nav class="mobile-nav">
+    <a href="#home" class="mob-nav-item active"><i data-lucide="home"></i><p>Home</p></a>
+    <a href="about.html" class="mob-nav-item"><i data-lucide="user"></i><p>About</p></a>
+    <a href="#skills" class="mob-nav-item"><i data-lucide="code-2"></i><p>Skills</p></a>
+    <a href="#projects" class="mob-nav-item"><i data-lucide="layout-grid"></i><p>Projects</p></a>
+    <a href="#contact" class="mob-nav-item"><i data-lucide="mail"></i><p>Contact</p></a>
+  </nav>
+
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script>lucide.createIcons();</script>
+  <script src="script.js"></script>
+</body>
+</html>
