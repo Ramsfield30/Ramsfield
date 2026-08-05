@@ -178,3 +178,36 @@ window.addEventListener('scroll', function() {
     }
   });
 });
+// ===== COUNT UP STATS =====
+const statNumbers = document.querySelectorAll('.stat-card h3');
+
+const countObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      const el = entry.target;
+      const text = el.textContent;
+      const isPercent = text.includes('%');
+      const isPlus = text.includes('+');
+      const target = parseInt(text);
+      let count = 0;
+      const duration = 5000;
+      const steps = 60;
+      const increment = target / steps;
+      
+      const timer = setInterval(function() {
+        count += increment;
+        if (count >= target) {
+          count = target;
+          clearInterval(timer);
+        }
+        el.textContent = Math.floor(count) + (isPlus ? '+' : '') + (isPercent ? '%' : '');
+      }, duration / steps);
+      
+      countObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.5 });
+
+statNumbers.forEach(function(el) {
+  countObserver.observe(el);
+});
