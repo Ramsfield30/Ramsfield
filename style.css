@@ -417,8 +417,6 @@ h1 {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 40px 100px;
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
 }
 
 .stat-card {
@@ -459,8 +457,6 @@ h1 {
 .skills {
   padding: 80px 100px;
   background: var(--bg-2);
-  border-top: 1px solid var(--border);
-  border-bottom: 1px solid var(--border);
 }
 
 .skills-title {
@@ -1056,6 +1052,7 @@ footer {
     grid-template-columns: repeat(4, 1fr);
     padding: 20px 16px;
     gap: 8px;
+    
   }
 
   .stat-card {

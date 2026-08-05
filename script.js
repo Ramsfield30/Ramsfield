@@ -11,13 +11,13 @@ resizeCanvas();
 window.addEventListener('resize', resizeCanvas);
 
 const diamonds = [
-  { size: 18, floatOffset: 0, color: '#a855f7' },
-  { size: 12, floatOffset: 1.5, color: '#c084fc' },
-  { size: 22, floatOffset: 3, color: '#7c3aed' },
-  { size: 14, floatOffset: 4.5, color: '#d8b4fe' },
-  { size: 20, floatOffset: 6, color: '#a855f7' },
-  { size: 16, floatOffset: 2, color: '#c084fc' },
-  { size: 10, floatOffset: 5, color: '#d8b4fe' },
+  { size: 18, floatOffset: 0, color: '#818cf8' },
+  { size: 12, floatOffset: 1.5, color: '#a855f7' },
+  { size: 22, floatOffset: 3, color: '#6366f1' },
+  { size: 14, floatOffset: 4.5, color: '#c084fc' },
+  { size: 20, floatOffset: 6, color: '#818cf8' },
+  { size: 16, floatOffset: 2, color: '#6366f1' },
+  { size: 10, floatOffset: 5, color: '#a5b4fc' },
 ];
 
 let time = 0;
@@ -31,7 +31,7 @@ function drawDiamond(x, y, size, color, alpha) {
   ctx.globalAlpha = (alpha || 1) * 0.3;
   ctx.fillStyle = color;
   ctx.beginPath();
-  ctx.rect(-size/2-4, -size/2-4, size+8, size+8);
+  ctx.rect(-size/2-4, -size/2-4, size+4, size+4);
   ctx.fill();
   const gradient = ctx.createLinearGradient(-size, -size, size, size);
   gradient.addColorStop(0, '#ffffff');
